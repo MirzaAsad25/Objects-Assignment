@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Objects Assignment</title>
+        <script defer src="./objects.js"></script>
+    </head>
+    <body>
+        <form>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" />
+            </div>
+
+            <br />
+
+            <div>
+                <input type="radio" name="gender" id="male" />
+                <label for="male">Male</label>
+            </div>
+            <div>
+                <input type="radio" name="gender" id="female" />
+                <label for="female">Female</label>
+            </div>
+
+            <br />
+
+            <div>
+                <label for="address">Address</label>
+                <textarea name="address" id="address" cols="30"></textarea>
+            </div>
+
+            <br />
+
+            <div>
+                <label for="education">Education</label>
+                <select name="education" id="education">
+                    <option selected disabled>Select Education</option>
+                    <option value="PhD">PhD</option>
+                    <option value="Master's">Master's</option>
+                    <option value="Bachelor's">Bachelor's</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Matric">Matric</option>
+                </select>
+            </div>
+
+            <br />
+
+            <div>
+                <label for="profession">Profession</label>
+                <select name="profession" id="profession">
+                    <option selected disabled>Select Profession</option>
+                    <option value="Business">Business</option>
+                    <option value="Private Job">Private Job</option>
+                    <option value="Gov Job">Gov Job</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <br />
+
+            <button>Submit</button>
+        </form>
+    </body>
+</html>
