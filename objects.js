@@ -55,6 +55,30 @@ car1.getInfo();
 car2.getInfo();
 
 // 4.
+function Person(name, gender, address, education, profession) {
+    this.name = name;
+    this.gender = gender;
+    this.address = address;
+    this.education = education;
+    this.profession = profession;
+}
+
+const people = [];
+
 document.querySelector('form').addEventListener('submit', e => {
     e.preventDefault();
+
+    const name = e.target.name.value;
+    const gender = document
+        .querySelector('input[name="gender"]:checked')
+        .getAttribute('id');
+    const address = e.target.address.value;
+    const education = e.target.education.value;
+    const profession = e.target.profession.value;
+
+    const person = new Person(name, gender, address, education, profession);
+
+    people.push(person);
+
+    console.log(people);
 });
